@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  margin: var(--spacing-large) 0;
+  gap: var(--spacing-large);
+  padding: 8px;
+  justify-content: space-around;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-around;
+  transition: max-height 0.2s ease-in;
+  overflow: hidden;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.visible {
+  max-height: 500px;
+}
+
+.hidden {
+  max-height: 0px;
+}
+
+.wrapper svg {
+  font-size: var(--font-size-large);
+}
+
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px rgb(167, 167, 167);
+  border-radius: 4px;
+}
+
+.sortContainer {
+  display: flex;
+}
+
+.sortContainer p {
+  width: 100px;
+}
+
+.sortContainer select {
+  width: 180px;
+  height: 40px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+}

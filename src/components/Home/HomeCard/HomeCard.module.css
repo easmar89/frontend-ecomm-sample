@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  font-family: var(--font-family-secondary);
+}
+
+.container:hover .imageText {
+  opacity: 1;
+}
+
+.container img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.container:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.1);
+}
+
+@media (hover: none) {
+  .container .imageText {
+    opacity: 1;
+  }
+  .container img {
+    filter: brightness(0.3);
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 30%;
+    max-width: 500px;
+  }
+}

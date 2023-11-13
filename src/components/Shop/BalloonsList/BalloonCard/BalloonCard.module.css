@@ -1,0 +1,67 @@
+.balloonContainer {
+  display: flex;
+  margin-bottom: var(--spacing-large);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px 2px 4px -2px rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+.banner {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  background-color: var(--color-accent);
+  padding: var(--spacing-small);
+  color: white;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.balloonInfo {
+  padding: var(--spacing-large);
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balloonContainer img {
+  width: 160px;
+}
+
+.actionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.buttons {
+  margin-top: var(--spacing-large);
+  display: flex;
+  justify-self: end;
+  gap: 1rem;
+}
+
+.buttons input {
+  width: 50px;
+  padding-left: var(--spacing-small);
+}
+
+.currency {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .balloonContainer img {
+    width: 80px;
+    height: 80px;
+  }
+}

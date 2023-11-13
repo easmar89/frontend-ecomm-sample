@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  max-width: 800px;
+  flex: 1;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.detailsContainer {
+  width: 400px;
+  max-width: 30%;
+  padding-left: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-size: 1.4rem;
+  margin: var(--spacing-medium) 0;
+}
+
+.addToCartButton {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  margin-bottom: 1rem;
+}
+
+.quantity input {
+  width: 60px;
+  height: 30px;
+  margin: var(--spacing-medium);
+  padding: var(--spacing-small);
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .detailsContainer {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}

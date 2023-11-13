@@ -1,0 +1,68 @@
+.homeImage {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+  position: relative;
+}
+
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-family-secondary);
+  font-size: 6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .textContainer {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer {
+    font-size: 2.5rem;
+  }
+}
+
+.promo {
+  color: var(--color-accent);
+}
+
+.container {
+  margin: 24rem 0;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  font-weight: 300;
+  margin: 8rem 0;
+  justify-content: center;
+}
+
+.container h1:before,
+.container h1:after {
+  content: "";
+  width: 20%;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.container h1:before {
+  margin-right: 24px;
+}
+
+.container h1:after {
+  margin-left: 24px;
+}

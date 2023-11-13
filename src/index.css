@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color scheme */
+  --color-dark: #22223b;
+  --color-light: #f6ffff;
+  --color-accent: #e63946;
+
+  /* Typography */
+  --font-family-primary: "Istok Web", sans-serif;
+  --font-family-secondary: "Bebas Neue", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-large: 1.25rem;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 12rem;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.5;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-secondary);
+}
+
+a,
+button,
+input,
+select {
+  color: var(--color-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  font-size: var(--font-size-base);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+  border-radius: 4px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 80vw;
+  max-width: 1600px;
+  padding: var(--spacing-xl) 0;
+  margin: 1rem auto;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+svg {
+  cursor: pointer;
+}
+
+select {
+  padding-left: 0.6rem;
+}
+
+footer {
+  justify-self: flex-end;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #888;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 95%;
+  }
+}

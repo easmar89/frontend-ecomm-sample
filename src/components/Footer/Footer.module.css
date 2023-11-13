@@ -1,0 +1,49 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: var(--spacing-xl) 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.section {
+  flex: 1;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.socialIcons svg {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-large);
+  }
+
+  .section {
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+  }
+
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

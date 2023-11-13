@@ -1,0 +1,26 @@
+.mobNav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background-color: black;
+  transition: left 0.3s;
+  z-index: 8;
+  overflow-y: auto;
+  font-size: 3rem;
+  font-family: var(--font-family-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: var(--spacing-large);
+  color: white;
+}
+
+.openNav {
+  left: 0;
+}
+
+.openNav li a:hover {
+  color: var(--color-accent);
+}

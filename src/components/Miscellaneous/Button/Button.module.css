@@ -1,0 +1,13 @@
+.button {
+  background-color: white;
+  color: black;
+}
+
+.button.inverse {
+  background-color: black;
+  color: white;
+}
+
+.button.fullWidth {
+  width: 100%;
+}

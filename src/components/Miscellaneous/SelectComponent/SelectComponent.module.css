@@ -1,0 +1,13 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter input {
+  margin: 0 var(--spacing-small);
+}
